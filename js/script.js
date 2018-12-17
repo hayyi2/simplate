@@ -9,15 +9,17 @@ document.onreadystatechange = function(e) {
 		set_auto_height();
 	}
 };
-// $(document).on("click","body [data-toggle=collapse]",function() {
-// 	if ($('body').hasClass('active-sidenav')) {
-// 		$('body').removeClass('active-sidenav');
-// 		document.cookie="sidenav=nonactive";
-// 	}else{
-// 		$('body').addClass('active-sidenav');
-// 		document.cookie="sidenav=active";
-// 	}
-// });
+
+$(document).on('click', function(e) {
+	var el = $('[data-toggle=collapse]');
+	var target = $(el.attr('data-target'));
+	if (!$(e.target).closest(el.attr('sidenav-target')).length) {
+		if (target.hasClass('show')) {
+			target.removeClass('show');
+		}
+	}
+});
+
 $(window).resize(function(){
 	set_auto_height();
 });
