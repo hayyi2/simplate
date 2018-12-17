@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Elements &middot; Simplate Template</title>
+	<base href="">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css?v1" rel="stylesheet">
+
+	<!-- vendor -->
+	<!-- fontawesome -->
+	<link href="css/style.min.css?v1" rel="stylesheet">
+	<!-- dataTables -->
+	<link href="vendor/dataTables/dataTables.bootstrap4.min.css" rel="stylesheet">
+	<!-- bootstrap-select -->
+	<link href="vendor/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+
+	<!-- custom style -->
+	<link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+
+	<!-- jQuery -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bs-custom-file-input.min.js"></script>
+	<!-- vendor -->
+	<!-- dataTables -->
+	<script src="vendor/dataTables/jquery.dataTables.min.js"></script>
+	<script src="vendor/dataTables/dataTables.bootstrap4.min.js"></script>
+	<!-- bootstrap-select -->
+	<script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+	<!-- text editor tinymce -->
+	<script type="text/javascript" src="vendor/tinymce/tinymce.min.js"></script>
+	<!-- chartjs -->
+	<script src="vendor/chartjs/chart.min.js"></script>
+	<script src="vendor/chartjs/chart-data.js"></script>
+
+	<!-- custom script -->
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<div class="container">
+				<div class="mainnav-content row">
+					<div class="col-lg-3 mainnav-left">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav">
+							<i class="fas fa-bars"></i>
+						</button>
+						<a class="navbar-brand" href="index.html">Simplate <small class="show-sm">v1.0</small></a>
+					</div>
+					<div class="col-lg-6 mainnav-center">
+						<div class="collapsed navbar-collapse" id="mainnav">
+							<ul class="navbar-nav mainnav mx-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html"><i class="fa-sm fas fa-tachometer-alt"></i> Dashboard</a>
+								</li>
+								<li class="divider"></li>
+								<li class="nav-item">
+									<a class="nav-link" href="table.html"><i class="fa-sm fas fa-table"></i> Tables</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="form.html"><i class="fa-sm fas fa-edit"></i> Forms</a>
+								</li>
+								<li class="divider"></li>
+								<li class="nav-item dropdown active show">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fas fa-grip-vertical"></i> More
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="option.html">Options</a>
+										<a class="dropdown-item active" href="element.html">Elements</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="blank.html">Blank Page</a>
+										<a class="dropdown-item" href="signin.html">Sign in Page</a>
+										<a class="dropdown-item" href="404.html">Error Page</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 mainnav-right">
+						<div class="collapsed navbar-collapse">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="far fa-bell"></i><span class="badge badge-success">2</span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-notivication">
+										<!-- <a href="#" class="dropdown-item disabled">No Notivication</a> -->
+										<a href="#" class="dropdown-item">
+											<i class="fas fa-sm fa-envelope"></i>2 Pesan baru <br>
+											<i class="fas fa-sm"></i><small class="text-secondary">5 Mins ago</small>
+										</a>
+										<a href="#" class="dropdown-item">
+											<i class="fas fa-sm fa-user-friends"></i>5 Member Baru
+										</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="far fa-sm fa-eye"></i>View All</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="show-md">Keroro Gunsou</span>
+										<div class="avatar ml-0 ml-sm-2"><img src="img/user5.PNG" alt="A"></div>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item active" href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+										<a class="dropdown-item" href="#"><i class="fa fa-fw fa-user-cog"></i> Change Profile</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="login.html"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="body">
+		<div class="container auto-height">
+			<div class="content">
+				<div class="content-header">
+					<h2 class="content-title text-center">Elements</h2>
+				</div>
+				<div class="content-body">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h4 class="card-title">Text Colour</h4>
+								</div>
+								<div class="card-body">
+									<p class="px-1 mb-2 text-primary">.text-primary</p>
+									<p class="px-1 mb-2 text-secondary">.text-secondary</p>
+									<p class="px-1 mb-2 text-success">.text-success</p>
+									<p class="px-1 mb-2 text-danger">.text-danger</p>
+									<p class="px-1 mb-2 text-warning">.text-warning</p>
+									<p class="px-1 mb-2 text-info">.text-info</p>
+									<p class="px-1 mb-2 text-light bg-dark">.text-light</p>
+									<p class="px-1 mb-2 text-dark">.text-dark</p>
+									<p class="px-1 mb-2 text-muted">.text-muted</p>
+									<p class="px-1 mb-2 text-white bg-dark">.text-white</p>
+								</div>
+							</div>
+							<!-- /.card -->
+						</div>
+						<div class="col-sm-6">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h4 class="card-title">Background color</h4>
+								</div>
+								<div class="card-body">
+									<div class="p-1 mb-1 bg-primary text-white">.bg-primary</div>
+									<div class="p-1 mb-1 bg-secondary text-white">.bg-secondary</div>
+									<div class="p-1 mb-1 bg-success text-white">.bg-success</div>
+									<div class="p-1 mb-1 bg-danger text-white">.bg-danger</div>
+									<div class="p-1 mb-1 bg-warning text-dark">.bg-warning</div>
+									<div class="p-1 mb-1 bg-info text-white">.bg-info</div>
+									<div class="p-1 mb-1 bg-light text-dark">.bg-light</div>
+									<div class="p-1 mb-1 bg-dark text-white">.bg-dark</div>
+									<div class="p-1 mb-1 bg-white text-dark">.bg-white</div>
+								</div>
+							</div>
+							<!-- /.card -->
+						</div>
+					</div>
+					<!-- /.row -->
+					<h3 class="mb-3">Typography</h3>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h4 class="card-title">Headings</h4>
+								</div>
+								<div class="card-body">
+									<h1>h1. Bootstrap heading</h1>
+									<h2>h2. Bootstrap heading</h2>
+									<h3 class="mb-3">h3. Bootstrap heading</h3>
+									<h4>h4. Bootstrap heading</h4>
+									<h5>h5. Bootstrap heading</h5>
+									<h6>h6. Bootstrap heading</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h4 class="card-title">Inline text elements</h4>
+								</div>
+								<div class="card-body">
+									<p class="mb-1">You can use the mark tag to <mark>highlight</mark> text.</p>
+									<p class="mb-1"><del>This line of text is meant to be treated as deleted text.</del></p>
+									<p class="mb-1"><s>This line of text is meant to be treated as no longer accurate.</s></p>
+									<p class="mb-1"><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+									<p class="mb-1"><u>This line of text will render as underlined</u></p>
+									<p class="mb-1"><small>This line of text is meant to be treated as fine print.</small></p>
+									<p class="mb-1"><strong>This line rendered as bold text.</strong></p>
+									<p class="mb-1"><em>This line rendered as italicized text.</em></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h3 class="mb-3">Buttons</h3>
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h4 class="card-title">Button Size</h4>
+								</div>
+								<div class="card-body">
+									<p class="mb-1">Large</p>
+									<div class="mb-1">
+										<a href="#" class="btn btn-lg btn-primary">primary</a>
+										<a href="#" class="btn btn-lg btn-success">success</a>
+										<a href="#" class="btn btn-lg btn-danger">danger</a>
+										<a href="#" class="btn btn-lg btn-warning">warning</a>
+										<a href="#" class="btn btn-lg btn-info">info</a>
+										<a href="#" class="btn btn-lg btn-default">default</a>
+										<a href="#" class="btn btn-lg btn-secondary">secondary</a>
+									</div>
+									<p class="mb-1">Medium</p>
+									<div class="mb-1">
+										<a href="#" class="btn btn-primary">primary</a>
+										<a href="#" class="btn btn-success">success</a>
+										<a href="#" class="btn btn-danger">danger</a>
+										<a href="#" class="btn btn-warning">warning</a>
+										<a href="#" class="btn btn-info">info</a>
+										<a href="#" class="btn btn-default">default</a>
+										<a href="#" class="btn btn-secondary">secondary</a>
+									</div>
+									<p class="mb-1">Small</p>
+									<div class="mb-1">
+										<a href="#" class="btn btn-sm btn-primary">primary</a>
+										<a href="#" class="btn btn-sm btn-success">success</a>
+										<a href="#" class="btn btn-sm btn-danger">danger</a>
+										<a href="#" class="btn btn-sm btn-warning">warning</a>
+										<a href="#" class="btn btn-sm btn-info">info</a>
+										<a href="#" class="btn btn-sm btn-default">default</a>
+										<a href="#" class="btn btn-sm btn-secondary">secondary</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h4 class="card-title">Block Buttons</h4>
+								</div>
+								<div class="card-body">
+									<p class="mb-1">Large</p>
+									<div class="mb-1">
+										<a href="#" class="btn btn-lg btn-block btn-primary">primary</a>
+									</div>
+									<p class="mb-1">Medium</p>
+									<div class="mb-1">
+										<a href="#" class="btn btn-pr btn-block btn-primary">primary</a>
+									</div>
+									<p class="mb-1">Small</p>
+									<div class="mb-1">
+										<a href="#" class="btn btn-sm btn-block btn-primary">primary</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.row -->
+					<h3 class="mb-3">Alert</h3>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="mb-3">
+								<h4>Alert Outside The Card</h4>
+								<div class="alert alert-primary" role="alert">
+									This is a primary alert—check it out!
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="alert alert-secondary" role="alert">
+									This is a secondary alert—check it out!
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="alert alert-success" role="alert">
+									This is a success alert—check it out!
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="alert alert-danger" role="alert">
+									This is a danger alert—check it out!
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="alert alert-warning" role="alert">
+									This is a warning alert—check it out!
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="alert alert-info" role="alert">
+									This is a info alert—check it out!
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="alert alert-dark" role="alert">
+									This is a dark alert—check it out!
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<h4>Additional content</h4>
+							<div class="alert alert-success" role="alert">
+								<h4 class="alert-heading">Well done!</h4>
+								<p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+								<hr class="my-1">
+								<p class="mb-0">Be sure to use margin utilities to keep things nice and tidy.</p>
+							</div>
+							<div class="card mb-3">
+								<div class="card-header">
+									<h4 class="card-title">Alert in The Card</h4>
+								</div>
+								<div class="alert alert-primary" role="alert">
+									This is a primary alert—check it out!
+								</div>
+								<div class="card-body">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</p>
+								</div>
+							</div>
+							<!-- /.card -->
+						</div>
+					</div>
+					<!-- /.row -->
+					<h3 class="mb-3">Tabs Card</h3>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="card mb-3">
+								<div class="card-header d-flex flex-row">
+									<h4 class="card-title mr-4">Left Tab</h4>
+									<ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+										<li class="nav-item">
+											<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+										</li>
+									</ul>
+								</div>
+								<div class="card-body">
+									<div class="tab-content" id="myTabContent">
+										<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
+										<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>
+										<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h4 class="card-title">Right Tab</h4>
+									<ul class="card-header-tabs nav nav-tabs" id="myTab2" role="tablist">
+										<li class="nav-item">
+											<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home2" aria-selected="true">Home</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile2" aria-selected="false">Profile</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false">Contact</a>
+										</li>
+									</ul>
+								</div>
+								<div class="card-body">
+									<div class="tab-content" id="myTab2Content">
+										<div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab">Home</div>
+										<div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab">Profile</div>
+										<div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="card mb-3">
+								<div class="card-header d-flex flex-column">
+									<h4 class="card-title">Bottom Tab</h4>
+									<ul class="card-header-tabs mt-2 nav nav-tabs mx-0" id="myTab3" role="tablist">
+										<li class="nav-item">
+											<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home3" role="tab" aria-controls="home3" aria-selected="true">Home</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile3" role="tab" aria-controls="profile3" aria-selected="false">Profile</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact3" role="tab" aria-controls="contact3" aria-selected="false">Contact</a>
+										</li>
+									</ul>
+								</div>
+								<div class="card-body">
+									<div class="tab-content" id="myTab3Content">
+										<div class="tab-pane fade show active" id="home3" role="tabpanel" aria-labelledby="home-tab">Home</div>
+										<div class="tab-pane fade" id="profile3" role="tabpanel" aria-labelledby="profile-tab">Profile</div>
+										<div class="tab-pane fade" id="contact3" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.row -->
+					<h3 class="mb-3">Font Awesome</h3>
+					<div class="alert alert-primary" role="alert">
+						This is a primary alert—check it out!
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h4 class="card-title">Icon Sizes</h4>
+								</div>
+								<div class="card-body">
+									<i class="fas fa-camera-retro fa-xs"></i>
+									<i class="fas fa-camera-retro fa-sm"></i>
+									<i class="fas fa-camera-retro fa-lg"></i>
+									<i class="fas fa-camera-retro fa-2x"></i>
+									<i class="fas fa-camera-retro fa-3x"></i>
+									<i class="fas fa-camera-retro fa-5x"></i>
+									<i class="fas fa-camera-retro fa-7x"></i>
+									<i class="fas fa-camera-retro fa-10x"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h4 class="card-title">List Icons</h4>
+								</div>
+								<div class="card-body">
+									<ul class="fa-ul">
+										<li><span class="fa-li"><i class="fas fa-check-square"></i></span>List icons can</li>
+										<li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
+										<li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
+										<li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Bordered & Pulled Icons</h4>
+								</div>
+								<div class="card-body">
+									<i class="fas fa-quote-left fa-2x fa-pull-left fa-border"></i>
+									Gatsby believed in the green light, the orgastic future that year by year recedes before us.
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.row -->
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+				&copy; 2018 <a href="https://github.com/hayyi2/simplate" target="_blank">Simplate</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
