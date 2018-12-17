@@ -6,7 +6,7 @@ Template simpel, untuk kebutuhan main navigasi sekitar kurang dari empat.
 
 ## Capture
 
-![Capture](Dashboard_Simplate.png)
+![Capture](capture/Dashboard_Simplate.png)
 
 ## Getting Started
 
